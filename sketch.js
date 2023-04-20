@@ -88,7 +88,9 @@ function draw() {
         jwelleryG.setVelocityYEach(0);
         swordGroup.setVelocityYEach(0);
 //create a sprite
-var gameOver = createSprite(100,250);
+var Over = createSprite(200,250,20,20);
+  Over.addAnimation("gameover",gameOver);
+  Over.scale=0.7
 //add a animation for gameover
 if (gameState === "end"){
   stroke("yellow");
